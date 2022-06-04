@@ -3,7 +3,7 @@ const React = require('react');
 //Inline CSS
 const myStyle = {
     color: '#0000CD',
-    backgroundColor: '#FFFF00',
+    backgroundColor: '#E6E6FA',
     textAlign: 'center',
 };
 

@@ -22,9 +22,16 @@ app.get('/pokemon', (req, res) => {
     
 })
 
-app.get('/pokemon/:id', (req, res) => {
-    res.send(req.params.id)
-})
+//app.get('/pokemon/:id', (req, res) => {
+    //res.send(req.params.id)
+//})
+
+//Show pokemon route
+app.get('/pokemon/:indexOfPokemonArray', (req, res) => {
+    res.render('Show', {
+        pokemon:pokemons[req.params.indexOfPokemonArray]
+    });
+});
 
 //Port
 app.listen(PORT, () => {
