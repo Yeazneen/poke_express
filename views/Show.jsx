@@ -14,10 +14,10 @@ class Show extends React.Component{
             <div>
                 <h1 style={myStyle}>Gotta Catch 'Em All</h1>
                 <nav>
-                    <a href="/pokemon/index">Back</a>
+                    <a href="/pokemon">Back</a>
                 </nav> 
                 <h2>{pokemon.name}</h2>
-                <image src={pokemon.img.jpg} alt={this.props.alt}></image>  
+                <image src={`${pokemon.img}.jpg`} alt={this.props.alt}></image>  
             </div>
         )
     }
