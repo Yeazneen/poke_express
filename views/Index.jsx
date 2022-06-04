@@ -11,8 +11,18 @@ class Index extends React.Component{
     render(){
         const pokemons = this.props.pokemons
         return (
-            <div style={myStyle}>
-                <h1>See All The Pokemon!</h1>
+            <div>
+                <h1 style={myStyle}>See All The Pokemon!</h1>
+                <ul>
+                {
+                    pokemons.map((pokemon, i) => {
+                        return (
+                            <li><a href ={`/pokemon/${i}`}>{pokemons.name}</a></li>
+                        )
+                        
+                    })
+                }
+                </ul>
             </div>
         )
     }

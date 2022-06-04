@@ -19,7 +19,10 @@ app.engine('jsx', renderFile);
 //Pokemon Index
 app.get('/pokemon', (req, res) => {
     res.render('Index', { pokemons })
+    
 })
+
+
 
 //Port
 app.listen(PORT, () => {
